@@ -1,140 +1,347 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Padaria Pão Quente — Pães artesanais, bolos e cafés especiais. Site acessível com HTML semântico, CSS e JavaScript." />
-  <title>Padaria Pedaço do céu | Pães artesanais, bolos e cafés especiais</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Padaria Pedaço do Céu</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Padaria Pão Quente - Página inicial">
-        <span class="logo-emoji" aria-hidden="true">🥖</span>
-        <span>Padaria Pedaço do céu</span>
-      </a>
-      <nav aria-label="Navegação principal">
-        <ul class="nav-list">
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="container nav">
+
+      <div class="logo">
+        <img src="img/logo.png" alt=" logo da padaria pedaço do Céu" class="logo-img">
+
+        <div>
+          <h2>Padaria</h2>
+          <span>Pedaço do Céu</span>
+        </div>
+
+      </div>
+
+      <nav>
+
+        <ul>
+
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#cardapio">Cardápio</a></li>
+
+          <li><a href="#menu">Cardápio</a></li>
+
           <li><a href="#contato">Contato</a></li>
+
         </ul>
+
       </nav>
+
     </div>
+
   </header>
 
-  <main id="conteudo">
-    <section class="hero" aria-labelledby="hero-titulo">
-      <div class="container">
-        <h1 id="hero-titulo">Padaria Pedaço de céu</h1>
-        <p class="hero-tagline">Pães, bolos e cafés especiais</p>
-        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
-      </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
 
-    <section id="sobre" aria-labelledby="sobre-titulo" class="section">
-      <div class="container">
-        <h2 id="sobre-titulo">Sobre nós</h2>
-        <p>Um pedaço do céu direto para seu paladar desde 2023⛅.</p>
-      </div>
-    </section>
+    <div class="container hero-content">
 
-    <section id="cardapio" aria-labelledby="cardapio-titulo" class="section section-alt">
-      <div class="container">
-        <h2 id="cardapio-titulo">Nosso cardápio</h2>
-        <p class="section-intro">Escolha seus favoritos. Use os botões para adicionar ao pedido.</p>
-        <div class="cards-grid" role="list">
-          <article class="card">
-           <img src="img/img1.jpeg" alt="Pão Frances" class="card-image" />
-            <div class="card-emoji" aria-hidden="true">🥖</div>
-            <h3>Pão Francês</h3>
-            <p>Pães quentinhos e frescos. Uma nova fornada á cada 4h00.</p>
-            <p class="price">R$ <span>1,25</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Pão Francês ao pedido">Adicionar</button>
-          </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🧀</div>
-            <h3>Pão de Queijo</h3>
-            <img src="img/img10.jpeg" alt="Pão de Queijo" class="card-image" />
-            <p>Sempre quentinhos e frescos. Uma fornada a cada 3h00.</p>
-            <p class="price">R$ <span>3,00</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Pão de Queijo ao pedido">Adicionar</button>
-          </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🥕</div>
-            <h3>Bolo de Cenoura</h3>
-             <img src="img/img8.jpeg" alt="olo de Cenoura" class="card-image" />
-            <p>Aquele bolo clássico, com cenoura tiradas diretamente da horta para a cozinha.</p>
-            <p class="price">R$ <span>25,00</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Bolo de Cenoura ao pedido">Adicionar</button>
-          </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">☕</div>
-            <h3>Café Expresso</h3>
-             <img src="img/img2.jpeg" alt="Café Expresso" class="card-image" />
-            <p>Café quentinho feito na hora.</p>
-            <p class="price">R$ <span>7,99</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Café Expresso ao pedido">Adicionar</button>
-          </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🥯</div>
-            <h3>Sonhos</h3>
-             <img src="img/img9.jpeg" alt="Sonhos" class="card-image" />
-            <p>Sabores: Chocolate, Creme & Doce de leite.</p>
-            <p class="price">R$ <span>4,50</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Sonho ao pedido">Adicionar</button>
-          </article>
-          <article class="card">
-            <div class="card-emoji" aria-hidden="true">🥐</div>
-            <h3>Croissant</h3>
-             <img src="img/img7.jpeg" alt="Croissant" class="card-image" />
-            <p>Croissant feito á cada 4h00 , com sabores de: Chocolate, Presunto e queijo.</p>
-            <p class="price">R$ <span>8,99</span></p>
-            <button type="button" class="btn-add" aria-label="Adicionar Croissant ao pedido">Adicionar</button>
-          </article>
+      <div class="hero-text">
+
+        <span class="tag">
+          Desde 2023
+        </span>
+
+        <h1>
+          O cheiro de pão quente muda o dia.
+        </h1>
+
+        <p>
+
+          Pães artesanais, doces caseiros
+          e cafés especiais feitos diariamente.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#menu" class="btn primary">
+            Ver Cardápio
+          </a>
+
+          <a href="#contato" class="btn secondary">
+            Fazer Pedido
+          </a>
+
         </div>
-        <div class="pedido-box" role="status" aria-live="polite" aria-atomic="true">
-          <strong>Pedido:</strong> <span id="contador-pedido">0</span> item(ns)
-        </div>
-      </div>
-    </section>
 
-    <section id="contato" aria-labelledby="contato-titulo" class="section">
-      <div class="container">
-        <h2 id="contato-titulo">Fale conosco</h2>
-        <form class="form" novalidate>
-          <div class="form-row">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required aria-required="true" />
-          </div>
-          <div class="form-row">
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" required aria-required="true" />
-          </div>
-          <div class="form-row">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-          <p class="form-feedback" role="alert" aria-live="assertive" id="form-feedback"></p>
-        </form>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>&copy; <span id="ano"></span> Padaria Pão Quente. Projeto educacional — Web Design Híbrido.</p>
+      <div class="hero-cards">
+
+        <div class="food-card">🥖</div>
+
+        <div class="food-card">☕</div>
+
+        <div class="food-card">🥐</div>
+
+        <div class="food-card">🍰</div>
+
+      </div>
+
     </div>
+
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+
+    <div class="container sobre-grid">
+
+      <div>
+
+        <span class="section-tag">
+          Nossa história
+        </span>
+
+        <h2>
+          Feito com carinho em cada fornada.
+        </h2>
+
+        <p>
+
+          Nossa padaria nasceu com o objetivo
+          de oferecer sabor, qualidade e aquele
+          clima aconchegante que lembra casa.
+
+        </p>
+
+      </div>
+
+      <div class="sobre-boxes">
+
+        <div class="box">
+          <img src="img/sobre-padaria.jpg" alt="Mesa posta com pães e doces" id="sobre-img">
+          <h3>pães, Doces e salgados artesanais</h3>
+          <p>Receitas caseiras irresistíveis.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ <!-- CARDÁPIO -->
+<section class="menu" id="menu">
+
+  <div class="container">
+
+    <div class="menu-top">
+
+      <div>
+
+        <span class="section-tag">
+          Cardápio
+        </span>
+
+        <h2>
+          Favoritos da casa
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+      <article class="card">
+
+        <div class="card-img">
+          <img src="img/img1.jpeg" alt="Pão Francês">
+        </div>
+
+         <div class="card-content">
+        <h3>Pão Francês</h3>
+
+        <p>
+          Crocante por fora e macio por dentro.
+        </p>
+
+        <div class="card-footer">
+
+          <span>R$ 1,25</span>
+
+          <button class="add-btn">
+            Pedir
+          </button>
+
+        </div>
+
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card">
+
+        <div class="card-img">
+          <img src="img/img7.jpeg" alt="Croissant">
+        </div>
+
+         <div class="card-content">
+        <h3>Croissant</h3>
+
+        <p>
+          Massa amanteigada com recheios especiais.
+        </p>
+
+        <div class="card-footer">
+
+          <span>R$ 8,99</span>
+
+          <button class="add-btn">
+            Pedir
+          </button>
+
+        </div>
+      </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card">
+
+        <div class="card-img">
+          <img src="img/img2.jpeg" alt="Café Especial">
+        </div>
+
+         <div class="card-content">
+        <h3>Café Especial</h3>
+
+        <p>
+          Café encorpado e preparado na hora.
+        </p>
+
+        <div class="card-footer">
+
+          <span>R$ 7,99</span>
+
+          <button class="add-btn">
+            Pedir
+          </button>
+
+        </div>
+      </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card">
+
+        <div class="card-img">
+          <img src="img/img8.jpeg" alt="Bolo Caseiro">
+        </div>
+
+         <div class="card-content">
+        <h3>Bolo Caseiro</h3>
+
+        <p>
+          Receitas artesanais cheias de sabor.
+        </p>
+
+        <div class="card-footer">
+
+          <span>R$ 25,00</span>
+
+          <button class="add-btn">
+            Pedir
+          </button>
+
+        </div>
+      </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+
+    <div class="container contato-box">
+
+      <div class="contato-text">
+
+        <span class="section-tag">
+          Contato
+        </span>
+
+        <h2>
+          Faça seu pedido
+        </h2>
+
+        <p>
+
+          Entre em contato para encomendas
+          e pedidos personalizados.
+
+        </p>
+
+      </div>
+
+      <form class="form">
+
+        <input type="text" placeholder="Seu nome">
+
+        <input type="email" placeholder="Seu e-mail">
+
+        <textarea placeholder="Digite sua mensagem"></textarea>
+
+        <button>
+          Enviar mensagem
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <div>
+
+        <h3>Padaria Pedaço do Céu</h3>
+
+        <p>
+          Pães artesanais, bolos e cafés especiais.
+        </p>
+
+      </div>
+
+    </div>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>
